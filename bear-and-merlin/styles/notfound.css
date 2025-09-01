@@ -1,5 +1,4 @@
-
-        * {
+   * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -357,7 +356,6 @@
         @media (min-width: 481px) {
             .newsletter-email {
                 max-width: 355px;
-                margin: 0 auto;
             }
         }
         .newsletter-email {
