@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const footerTitles = document.querySelectorAll('.cms-footer-block .toggle-title');
 
     footerTitles.forEach((title, index) => {
-        title.addEventListener('click', function() {
+        title.addEventListener('click', function () {
             if (window.innerWidth <= 480) {
                 const parentBlock = this.closest('.cms-footer-block');
                 const list = parentBlock.querySelector('ul');
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         el.href = `https://kiel.bear-and-merlin.com/${currentLocale}/`;
     });
 
-    window.addEventListener('resize', function() {
+    window.addEventListener('resize', function () {
         if (window.innerWidth > 480) {
             footerTitles.forEach(title => {
                 const parentBlock = title.closest('.cms-footer-block');
