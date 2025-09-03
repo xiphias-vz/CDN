@@ -316,9 +316,8 @@
     }
 
     .image-content {
-    flex: 1;
     text-align: center;
-}
+    }
 
     .banner-text-overlay {
         min-width: 300px;
