@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Check if the current URL contains 'kiel'
+    const hasKiel = window.location.href.includes('kiel');
+    const baseUrl = hasKiel ? 'https://kiel.bear-and-merlin.com' : 'https://bear-and-merlin.com';
+    
     const footerTitles = document.querySelectorAll('.cms-footer-block .toggle-title');
 
     footerTitles.forEach((title, index) => {
@@ -31,9 +35,10 @@ document.addEventListener('DOMContentLoaded', function () {
         link.href = `/${currentLocale}/${href}`;
     });
 
+    // Update homepage links with the conditional base URL
     const homepageElements = document.querySelectorAll('.header-logo a, .cms-footer-logo a, .return-button');
     homepageElements.forEach(el => {
-        el.href = `https://kiel.bear-and-merlin.com/${currentLocale}/`;
+        el.href = `${baseUrl}/${currentLocale}/`;
     });
 
     window.addEventListener('resize', function () {
@@ -47,4 +52,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
