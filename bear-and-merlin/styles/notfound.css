@@ -374,6 +374,7 @@
         @media all and (max-width: 480px) {
             .container {
                 width: 95%;
+                height: 75vh;
                 padding: 15px;
             }
 
