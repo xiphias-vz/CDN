@@ -5,6 +5,9 @@
             margin: 0 auto;
             display: flex;
         }
+.heading-continer {
+  width: 20%
+}
 
         .heading {
             color: #444;
@@ -21,7 +24,7 @@
         }
 
         .swiper {
-            width: 100%;
+            width: 800%;
             height: auto;
         }
 
