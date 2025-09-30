@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const formData = new FormData(form);
 
-        fetch('/contact/send/panda', {
+        fetch('https://test.panda-ring-ring.com/contact/send/panda', {
             method: 'POST',
             body: formData
         })
